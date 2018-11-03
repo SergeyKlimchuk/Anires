@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'PT Sans', sans-serif;
+    background-image: url('./assets/Images/2.jpg');
+    background-size: cover;
+    backdrop-filter: blur(50px);
+}

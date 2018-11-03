@@ -1,0 +1,30 @@
+app-header {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+.container {
+    min-height: calc(100vh - 63px);
+    padding-top: 63px;
+    display: flex;
+    flex-direction: column;
+}
+
+app-content-block {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+app-footer {
+    display: flex;
+    flex-grow: 0;
+}
+
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

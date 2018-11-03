@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Anurati-Regular';
+    src: url(./../../assets/Fonts/Anurati-Regular.otf);
+  }
+
+
+.container {
+    position: relative;
+    font-size: 2em;
+    font-family: 'Anurati-Regular';
+    width: 60px;
+    height: 60px;
+
+    user-select: none;
+}
+
+.fl, .sl {
+    position: absolute;
+    color: #F15556;
+}
+
+.fl {
+    top: 10px;
+    left: 10px;
+}
+
+.sl {
+    top: 10px;
+    left: 30px;
+}

@@ -1,0 +1,92 @@
+.container {
+    height: 450px;
+    background-color: #ddd;
+    display: flex;
+    position: relative;
+}
+
+.arrow-block {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.arrow {
+    height: 100px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.arrow:hover {
+    transition: .2s;
+}
+
+.arrow:hover .arrow-svg {
+    fill: red;
+}
+
+.arrow img {
+    width: 32px;
+    height: 32px;
+    color: #ddd;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.items-list {
+    flex-grow: 2;
+}
+
+.item {
+    height: 100%;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-strip {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.page-btn {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.page-btn:not(:first-child) {
+    margin-left: 10px;
+}
+
+.page-btn.active {
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+}
+
+.page-btn:not(.active):hover {
+    background-color: rgba(255, 255, 255, .8);
+    transition: .2s;
+}

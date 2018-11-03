@@ -1,0 +1,82 @@
+.container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.section-name {
+    padding: 10px;
+}
+
+.name {
+    padding: 10px;
+}
+
+.section-name a{
+    font-weight: 100;
+    transition: .2s;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.section-name a:hover {
+    color: #F15556;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.list {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.segment {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 200;
+    height: calc(303px + 2em);
+    display: flex;
+    flex-direction: column;
+}
+
+.item:hover .item-name {
+    color: #F15556;
+    transition: .2s;
+}
+
+.item:hover .item-image {
+    box-shadow: 0 0 3px black;
+    transition: .2s;
+}
+
+.item-image {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    border-bottom: #F15556 3px solid;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.item-name {
+    height: 2em;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+}
